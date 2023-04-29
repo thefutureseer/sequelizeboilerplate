@@ -17,5 +17,7 @@ project/
 │   ├── post.js
 │   └── ...
 ├── app.js
+|---.env
+|---.gitignore
 ├── package.json
 └── ...
