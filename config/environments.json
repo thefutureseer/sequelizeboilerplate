@@ -1,0 +1,23 @@
+// {
+//   "development": {
+//     "user": "${process.env.user}",
+//     "password": "${process.env.password}",
+//     "database": "${process.env.database}",
+//     "host": "localhost",
+//     "dialect": "mysql2" 
+//   },
+//   "test": {
+//     "user": "${process.env.user}",
+//     "password": "${process.env.password}",
+//     "database": "${process.env.database}",
+//     "host": "localhost",
+//     "dialect": "mysql2" 
+//   },
+//   "production": {
+//     "user": "${process.env.user}",
+//     "password": "${process.env.password}",
+//     "database": "${process.env.database}",
+//     "host": "localhost",
+//     "dialect": "mysql2" 
+//   }
+// }
