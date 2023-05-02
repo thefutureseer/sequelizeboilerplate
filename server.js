@@ -10,7 +10,7 @@ app.use(express.urlencoded({extended: true}));
 
 app.get('/', (req, res) => {
   //send to the browser
-  res.send("hello sequelize!")
+  res.send("coming soon sequelize json!")
 })
 // Routes
 app.use(apiIndex);
@@ -23,4 +23,6 @@ sequelize.sync({force: false})
       console.log('Server started on port 3000');
       console.log('Database sync complete');
   });
+}).catch((error) => {
+  console.error( 'error sync db or starting server: ',error)
 });

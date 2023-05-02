@@ -1,25 +1,24 @@
-//Sequelize module for model class, datatypes and init
-const {Model, DataTypes} = require('sequelize');
-
-//get connection to use Sequelize
+const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../config/sequelize');
 
 class Religion extends Model {}
 
 Religion.init(
   {
-    id: DataTypes.INTEGER,
-    allowNull: false,
-    primaryKey: true,
-    autoIncrement: true
-  },
-  {
-    religion_name: DataTypes.STRING,
-    allowNull: false,
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true
+    },
+    religion_name: {
+      type: DataTypes.STRING,
+      allowNull: false
+    }
   },
   {
     sequelize,
-    timestamp: true,
+    timestamps: true,
     freezeTableName: true,
     modelName: 'religion'
   }

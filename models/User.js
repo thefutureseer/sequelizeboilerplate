@@ -16,6 +16,7 @@ User.init(
   {
     id: {
       type: DataTypes.INTEGER,
+      allowNull: false,
       primaryKey: true,
       autoIncrement: true
     },
@@ -31,6 +32,14 @@ User.init(
         isEmail: true
       }
     },
+      religion_id: {
+        type: DataTypes.INTEGER,
+        allowNull: true,
+        references: {
+          model: 'religion',
+          key: 'id'
+        }
+      },
     password: {
       type: DataTypes.STRING,
       allowNull: true

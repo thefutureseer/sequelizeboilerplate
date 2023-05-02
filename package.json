@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "seed": "npx sequelize-cli db:seed:all"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +16,8 @@
     "express": "^4.18.2",
     "mysql2": "^3.2.4",
     "sequelize": "^6.31.0"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.6.0"
   }
 }
