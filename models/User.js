@@ -2,7 +2,7 @@
 const { Model, DataTypes } = require('sequelize');
 
 //bring in sequelize instance running and ready
-const sequelize = require('../config/sequelize');
+const sequelize = require('../config/config');
 
 //make a model
 class User extends Model {}
